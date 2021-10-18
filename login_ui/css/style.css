@@ -72,10 +72,11 @@ body {
 
 .sub-form {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-self: center; }
 
 .textbox {
-  font-size: 28px;
+  font-size: 22px;
   width: 100%;
   padding: 10px 1px;
   border-radius: 5px;
@@ -83,9 +84,50 @@ body {
   margin-bottom: 10px; }
   .textbox::placeholder {
     text-align: center;
-    color: olivedrab; }
+    color: olivedrab;
+    font-size: 20px; }
 
 .btn-lg {
   width: 100%;
   margin: 0px;
   padding: 12px; }
+
+.btn-raw {
+  background-color: transparent;
+  border-color: black;
+  height: 50px;
+  width: 200px;
+  margin-bottom: 10px; }
+
+.input-group {
+  display: flex;
+  align-items: center; }
+  .input-group .fa-circle,
+  .input-group .fa-eye-slash,
+  .input-group .fa-arrow-right {
+    margin-left: -25px; }
+
+.btn-group {
+  display: flex;
+  align-items: center; }
+  .btn-group .fa-google,
+  .btn-group .fa-apple,
+  .btn-group .fa-facebook {
+    margin-right: -20px; }
+
+.slash {
+  font-size: 30px;
+  font-weight: bold; }
+
+.forgot-pass {
+  text-align: center; }
+  .forgot-pass a {
+    color: black;
+    font-size: 20px; }
+
+.bottom-copyright {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 200px; }
+  .bottom-copyright span {
+    font-size: 20px; }

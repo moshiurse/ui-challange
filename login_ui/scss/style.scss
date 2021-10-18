@@ -93,10 +93,11 @@ body {
 .sub-form {
     display: flex;
     flex-direction: column;
+    align-self: center;
 }
 
 .textbox {
-    font-size: 28px;
+    font-size: 22px;
     width: 100%;
     padding: 10px 1px;
     border-radius: 5px;
@@ -106,11 +107,65 @@ body {
     &::placeholder {
         text-align: center;
         color: olivedrab;
+        font-size: 20px;
     }
 }
 
-.btn-lg {
+.btn-lg { 
     width: 100%;
     margin: 0px;
     padding: 12px;
+}
+
+.btn-raw {
+    background-color: transparent;
+    border-color: black;
+    height: 50px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    .fa-circle,
+    .fa-eye-slash,
+    .fa-arrow-right { 
+        margin-left: -25px;
+    }
+}
+
+.btn-group {
+    display: flex;
+    align-items: center;
+
+    .fa-google,
+    .fa-apple,
+    .fa-facebook {
+        margin-right: -20px;
+    }
+}
+
+.slash {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.forgot-pass {
+    text-align: center;
+
+    a {
+        color: black;
+        font-size: 20px;
+    }
+}
+
+.bottom-copyright {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+
+    span{
+        font-size: 20px;
+    }
 }
